@@ -15,7 +15,7 @@ module "vpc" {
   enable_vpn_gateway = true
 
   tags = {
-    Terraform = "true"
-    Environment = "dev"
+    Terraform   = "true"
+    Environment = "staging"
   }
 }
