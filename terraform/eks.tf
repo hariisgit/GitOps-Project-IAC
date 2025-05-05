@@ -2,7 +2,7 @@ module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 20.0"
 
-  cluster_name    = "gitops-cluster"
+  cluster_name    = var.eks-cluster-name
   cluster_version = "1.31"
 
   # Optional

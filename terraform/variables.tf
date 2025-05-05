@@ -9,3 +9,9 @@ variable "tf-state-bucket" {
   default     = "tf-state-s3-gitops"
   description = "Name of S3 Bucket containing Terraform state file"
 }
+
+variable "eks-cluster-name" {
+  description = "Name of the EKS Cluster"
+  type        = string
+  default     = "gitops-cluster"
+}
