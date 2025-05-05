@@ -13,6 +13,6 @@ terraform {
     # Value cannot be referenced from variables.tf file.
     bucket = "gitops-tf-state-bcuket"
     region = "us-east-1"
-    key = "/terraform/state/"
+    key = "terraform.tfstate"
   }
 }
