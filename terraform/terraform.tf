@@ -10,7 +10,8 @@ terraform {
 
   #Ref - https://developer.hashicorp.com/terraform/language/backend/s3
   backend "s3" {
-    bucket = var.tf-state-bucket
-    region = var.region
+    # Value cannot be referenced from variables.
+    bucket = "gitops-tf-state-bcuket"
+    region = "us-east-1"
   }
 }
